@@ -223,7 +223,8 @@
                         <!--<feature>standard</feature>-->
                         <!-- minimal distribution -->
                         <feature>minimal</feature>
-                        <feature>camel/2.19.3</feature>
+                        <feature>camel</feature>
+                        <feature>camel-hl7</feature>
                     </bootFeatures>
                     <javase>1.8</javase>
                 </configuration>

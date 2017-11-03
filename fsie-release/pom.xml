@@ -224,7 +224,7 @@
                         <feature>camel-mongodb</feature>
                         <feature>camel-mail</feature>
                         <feature>camel-sql</feature>
-                        <feature>hawtio-offline</feature>
+                        <feature>hawtio</feature>
                     </installedFeatures>
                     <!-- <startupFeatures/> -->
                     <bootFeatures>

@@ -224,7 +224,10 @@
                         <feature>camel-mongodb</feature>
                         <feature>camel-mail</feature>
                         <feature>camel-sql</feature>
+<<<<<<< HEAD
                         <feature>hawtio</feature>
+=======
+>>>>>>> 0bff3a1134f6d14bc05aa5dbb7655ca3a1629a5d
                     </installedFeatures>
                     <!-- <startupFeatures/> -->
                     <bootFeatures>
@@ -232,9 +235,13 @@
                         <!--<feature>standard</feature>-->
                         <!-- minimal distribution -->
                         <feature>minimal</feature>
+<<<<<<< HEAD
                         <feature>camel</feature>
                         <feature>camel-hl7</feature>
                         <feature>hawtio</feature>
+=======
+                        <feature>camel/2.19.3</feature>
+>>>>>>> 0bff3a1134f6d14bc05aa5dbb7655ca3a1629a5d
                     </bootFeatures>
                     <javase>1.8</javase>
                 </configuration>

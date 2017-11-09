@@ -1,0 +1,18 @@
+<blueprint xmlns="http://www.osgi.org/xmlns/blueprint/v1.0.0">
+ 	<bean id="hl7decoder" class="org.apache.camel.component.hl7.HL7MLLPNettyDecoderFactory"/>
+ 	<bean id="hl7encoder" class="org.apache.camel.component.hl7.HL7MLLPNettyEncoderFactory"/>
+
+    <camelContext xmlns="http://camel.apache.org/schema/blueprint">
+        <route id="file2hl7">
+            <from uri="file:samples\data\out" />
+            <log message="${in.body}"/>
+            <unmarshal>
+            	<hl7/>
+            </unmarshal>
+            <to uri="netty4:tcp://localhost:2100?sync=true&amp;encoder=#hl7encoder&amp;decoder=#hl7decoder" />
+        </route>
+
+        
+    </camelContext>
+ 
+</blueprint>

@@ -229,9 +229,9 @@
                     <!-- <startupFeatures/> -->
                     <bootFeatures>
                         <!-- standard distribution -->
-                        <!--<feature>standard</feature>-->
+                        <feature>standard</feature>
                         <!-- minimal distribution -->
-                        <feature>minimal</feature>
+                        <!--feature>minimal</feature-->
                         <feature>camel</feature>
                         <feature>camel-hl7</feature>
                         <feature>hawtio</feature>
